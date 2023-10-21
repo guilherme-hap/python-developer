@@ -1,15 +1,15 @@
-nome = "gUIlherME"
+name = "gUIlherME"
 
-print(nome.upper())
-print(nome.lower())
-print(nome.title())
+print(name.upper())
+print(name.lower())
+print(name.title())
 
-texto = "  Hello world!    "
+text = "  Hello world!    "
 
-print(texto + ".")
-print(texto.strip() + ".")
-print(texto.rstrip() + ".")
-print(texto.lstrip() + ".")
+print(text + ".")
+print(text.strip() + ".")
+print(text.rstrip() + ".")
+print(text.lstrip() + ".")
 
 menu = "Python"
 

@@ -1,11 +1,11 @@
-age = 18
+age = 19
 name = 'Guilherme'
-print(f'Meu nome é {name} e eu tenho {age} ano(s) de idade.')
+print(f'My name is {name} and I am {age}.')
 
 # Mudando o valor das variáveis
 age = 19
 name = 'Beatriz'
-print(f'Meu nome é {name} e eu tenho {age} ano(s) de idade.')
+print(f'My name is {name} and I am {age}.')
 
 # Não existem constantes em Python, por isso usa-se uma convenção de letras maiúsculas
 AMOUNT = 30.2

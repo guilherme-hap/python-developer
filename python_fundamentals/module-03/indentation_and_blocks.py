@@ -7,8 +7,8 @@ def withdraw(value):
     print("Thank you for being our customer, have a great day!\n")
 
 def deposit(value):
-    saldo = 500
-    saldo += value
+    balance = 500
+    balance += value
     print("Deposit successfully made!")
 
 withdraw(100)
