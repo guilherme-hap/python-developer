@@ -54,7 +54,7 @@ while True:
             print("Operation failed! The value entered is invalid.")
 
     elif option == "s":
-        print("\n================ EXTRATO ================")
+        print("\n================ STATEMENT ================")
         print("No movements were made." if not bank_statement else bank_statement)
         print(f"\nBalance: R$ {balance:.2f}")
         print("==========================================")
