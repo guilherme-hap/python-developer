@@ -1,5 +1,6 @@
 """
-
+    API desenvolvida com Flask e FlaskRESTful para cadastrar desenvolvedores. Implementa as funções báscias de
+    GET, PUT, POST e DELETE.
 """
 import json
 from flask import Flask
