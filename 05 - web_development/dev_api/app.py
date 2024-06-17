@@ -51,7 +51,10 @@ def delete_developer(id):
     if request.method == 'DELETE':
         developers.pop(id)
         for developer in developers:
-            developer['id'] -= 1
+            if developer['id'] <= id:
+                pass
+            elif developer['id'] > id:
+                developer['id'] -= 1
         return jsonify({'status': 'Success.', 'message': 'Record deleted.'})
 
 
