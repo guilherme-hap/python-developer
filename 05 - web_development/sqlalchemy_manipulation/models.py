@@ -1,5 +1,6 @@
 """
-
+    Programa que utiliza 'sqlalchemy' para criação e conexão com banco de dados 'sqlite'
+    e criação de tabelas de pessoa e atividade.
 """
 from sqlalchemy import create_engine
 from sqlalchemy import Column
@@ -43,6 +44,17 @@ class Tasks(Base):
     person_id = Column(Integer, ForeignKey('person.id'))
 
     person = relationship("Person")
+
+    def __repr__(self):
+        return f'<Task {self.name}>'
+
+    def save(self):
+        db_session.add(self)
+        db_session.commit()
+
+    def delete(self):
+        db_session.delete(self)
+        db_session.commit()
 
 
 def init_db():
