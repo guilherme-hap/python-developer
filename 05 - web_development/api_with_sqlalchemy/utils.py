@@ -35,5 +35,3 @@ if __name__ == '__main__':
     insert_person()
     update_person()
     query_person()
-    delete_person()
-    query_person()
