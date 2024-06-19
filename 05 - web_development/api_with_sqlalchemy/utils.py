@@ -1,8 +1,9 @@
 """
     Programa utilitário que implementa funções de inserção, atualização,
-    consulta e deleção para a tabela 'Person'
+    consulta e deleção para a tabela 'Person' e 'Users'.
 """
 from models import Person
+from models import Users
 
 
 # Insere pessoas na tabela pessoa
@@ -31,7 +32,20 @@ def delete_person():
     person.delete()
 
 
+def insert_user(login, password):
+    user = Users(login=login, password=password)
+    user.save()
+
+
+def query_all_users():
+    user = Users.query.all()
+    print(user)
+
+
 if __name__ == '__main__':
-    insert_person()
-    update_person()
-    query_person()
+    # insert_user("guilherme", "123")
+    # insert_user("henrique", "321")
+    query_all_users()
+    # insert_person()
+    # update_person()
+    # query_person()
