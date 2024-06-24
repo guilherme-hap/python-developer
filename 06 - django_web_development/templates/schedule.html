@@ -3,9 +3,13 @@
 {% block content %}
     <h2>Appointments</h2>
 
+    <a href="event/">
+        <button type="button">New event</button>
+    </a>
+
     <ul style="font-size: 18px">
-    {% for event in events %}
-        <li>{{ event.title }} - {{ event.get_event_date }}</li>
-    {% endfor %}
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.get_event_date }}</li>
+        {% endfor %}
     </ul>
 {% endblock %}
