@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "07 - final-project"
+version = "1.0.0"
+description = "Project."
+authors = ["Guilherme Henrique <henrique.guilhermexv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tweepy = "^4.14.0"
+pymongo = "^4.7.3"
+fastapi = "^0.111.0"
+pytest = "^8.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
